@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr01[] = {3, 4, 2, 5, 7};
+    int arr02[] = {6, 3, 6, 7, 2};
+      int size = sizeof(arr01) / sizeof(arr01[0]); // Get the size of the arrays
+    int product[size]; // Array to store the product
+
+    // Perform element-wise multiplication
+    for (int i = 0; i < size; i++) {
+        product[i] = arr01[i] * arr02[i];
+    }
+
+    // Print the product
+    cout << "Product: ";
+    for (int i = 0; i < size; i++) {
+        cout << product[i] << " "; // Output the product
+    }
+    cout << endl;
+
+    return 0; // Successful execution
+}
