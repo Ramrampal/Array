@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter the no of subjecn  ";
+  
+    cin>>n;
+      cout<<"Enter the marks of the subject <<endl ";
+    int marks[n];
+    for(int i=0;i<n;i++){
+      cin>>marks[i];
+    }
+   for(int i=0;i<n;i++){
+    if(marks[i]<35){
+        cout<<"The index is: " ;
+        
+        cout<<i<<" ";
+    }
+   }
+}
