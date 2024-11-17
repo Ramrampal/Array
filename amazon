@@ -1,0 +1,34 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    vector<int> arr(n);
+
+    // Input the sequence
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    // Sort the sequence
+    sort(arr.begin(), arr.end());
+
+    // Print the sorted sequence twice
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+
+    cout << endl;
+    return 0;
+}
+
+//output
+3
+121
+ out :-1 1 2 1 1 2
