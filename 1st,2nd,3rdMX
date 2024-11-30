@@ -1,0 +1,26 @@
+ #include<iostream>
+ using namespace std;
+ int main(){
+    int arr[]={100,45,6};
+    int n= sizeof(arr)/sizeof(arr[0]);
+    int mx=INT32_MIN;
+    int smx=INT32_MIN;
+    int tmx=INT32_MIN;
+    for( int i=0; i<n; i++){
+        if(mx<arr[i]) 
+        mx=arr[i];
+    }
+    for(int i=0;i<n;i++){
+        if (smx<arr[i] &&arr[i]!=mx){
+            smx=arr[i];
+        }
+    }
+    for(int i=0; i<n;i++){
+        if (arr[i] != mx && arr[i] != smx && tmx < arr[i]) {
+            tmx = arr[i];
+    }
+    }
+cout<<mx<<endl;
+cout<<smx<<endl;
+cout<<tmx<<endl;
+ }
