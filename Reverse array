@@ -29,6 +29,7 @@ int j=n-1;
         cout<<arr[i];
       //  cout<<arr[i];
     }
+
 👩🏻‍💻👩🏻‍💻👩🏻‍💻👩🏻‍💻👩🏻‍💻👩🏻‍💻👩🏻‍💻
   int a=0,b=n-1;
         while(a<b){
